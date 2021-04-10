@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">   
+    
+    <!-- for enabling all annotation so that third bean object works-->
+    <context:annotation-config /> 
+    
+    <!-- configuration by xml file of init and destroy-->
+  <bean class="com.springcore.lifecycle.Xmlcycle" name ="x" init-method="init" destroy-method="destroy">
+ 		 <property name="price" value ="10"/>
+  </bean>
+  
+   <!-- init and destoy is implemented in bean class using interfaces for this bean object-->
+   <bean class="com.springcore.lifecycle.Interfacecycle" name ="i">
+ 		 <property name="price" value ="50" />
+  </bean>
+    
+    <!-- init and destoy is implemented in bean class using annotation for this bean object-->
+   <bean class="com.springcore.lifecycle.Annotationcycle" name ="a">
+ 		 <property name="price" value ="100" />
+  </bean>
+  
+</beans>

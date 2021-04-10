@@ -1,0 +1,9 @@
+ctrl +1 				assist
+ctrl + 2 , l			assigning object to variable
+ctrl + shift + t 	   	seeing some classes
+ctrl + shift + o 		importing packages
+ctrl + shift + f 		formatting
+
+sopl for System.out.println()
+whenever we use nextLine() method after any of nextXxx() method it ignores nextLine()
+ so we have to use 2 times the nextLine() method

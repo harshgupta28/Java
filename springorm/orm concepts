@@ -1,0 +1,23 @@
+												Spring ORM
+
+
+Spring + ORM Frameworks( hibernate , toplink , iBatis ...) 
+
+or also cld ad spring with ORM frameworks used for object relational mapping for accessing data
+
+jdbc < hibernate < spring jdbc < spring orm 	// left to right  - better for data access
+
+when we use spring orm  - 
+
+	->we have to map class to database using xml or annotations 
+		(ss42)
+	
+	-> Product Dao uses object of HibernateTemplate 
+	   HibernateTemplate object of LocalSessionFactoryBean
+	   LocalSessionFactoryBean  implements SessionFactory interface
+	   LocalSessionFactoryBean uses objects of datasource,hibernateProperties,annotated class
+	   	(ss47)
+
+in this project we add dependency of hibernate bcoz we are using hiberate as ORM tool here.
+and on including orm , jdbc is included by itself as it uses jdbc	
+			  
