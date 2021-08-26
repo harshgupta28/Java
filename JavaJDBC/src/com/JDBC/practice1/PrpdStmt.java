@@ -15,7 +15,7 @@ public class PrpdStmt {
 			// creating connection
 			String url = "jdbc:mysql://localhost:3306/youtube";
 			String username = "root";
-			String password = "2802";
+			String password = "0000";
 			Connection con = DriverManager.getConnection(url, username, password);
 
 			// create a query
