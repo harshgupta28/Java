@@ -12,7 +12,7 @@ public class InsertJDBC {
 
 			String url = "jdbc:mysql://localhost:3306/youtube";
 			String username = "root";
-			String password = "2802";
+			String password = "0000";
 			
 			// opening connection
 			Connection con = DriverManager.getConnection(url, username, password);
